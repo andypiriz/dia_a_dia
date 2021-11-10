@@ -62,6 +62,7 @@ h1 {
     border-radius: 10px;
     padding: 0.625rem 1.563rem;
     border: 2px solid transparent;
+    transition: background-color 1s;
 }
 
 .boton-oscuro:hover, .boton-claro:hover {
@@ -78,6 +79,7 @@ h1 {
     border-radius: 10px;
     padding: 0.625rem 1.563rem;
     border: 2px solid transparent;
+    transition: background-color 1s;
 }
 
 /* ----- Header ----- */
@@ -163,6 +165,7 @@ footer {
 
 footer img {
     max-width: 100px;
+    transition: all 1s;
 }
 
 footer img:hover {
@@ -261,6 +264,7 @@ footer a {
     color: #f8f1df;
     background-color: #000000;
     padding: 5px;
+    transition: all 0.5s;
 }
 
 .articulos-primer-seccion h2:hover {
@@ -315,6 +319,7 @@ footer a {
 #segunda-seccion figure {
     display: inline-block;
     margin: 0 0.938rem;
+    transition: all 1s;
 }
 
 #segunda-seccion figure:hover {
