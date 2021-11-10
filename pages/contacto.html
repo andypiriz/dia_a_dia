@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dia A Dia | Contacto</title>
+    <link rel="stylesheet" href="../estilos.css">
+    <link rel="shortcut icon" href="../img/favicon.ico" type="image/x-icon">
+</head>
+
+<body>
+    <!-- HEADER -->
+    <header>
+        <nav>
+            <ul>
+                <li>
+                    <a href="../index.html">Inicio</a>
+                </li>
+                <li>
+                    <a href="menu.html">Menú</a>
+                </li>
+                <li>
+                    <a href="servicios.html">Servicios</a>
+                </li>
+                <li>
+                    <a href="../index.html" id="logo">
+                        <img src="../img/logo.png" alt="Logo de mi página">
+                    </a>
+                </li>
+                <li>
+                    <a href="blog.html">Blog</a>
+                </li>
+                <li>
+                    <a href="nosotros.html">Nosotros</a>
+                </li>
+                <li class="link-activo">
+                    <a href="#">Contacto</a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+    <!-- FIN DEL HEADER -->
+
+    <!-- MAIN -->
+    <main>
+        <section id="primer-seccion-contacto">
+            <h1>Contactanos</h1>
+        </section>
+        <section id="segunda-seccion-contacto">
+            <div class="centrado-grande">
+                <div id="div-contacto">
+                    <h2>Contacto</h2>
+                    <p> <img src="../img/ubicacion.png" alt=""> Montevideo, Uruguay</p>
+                    <p> <img src="../img/email.png" alt=""> info@diaadia.com.uy</p>
+                    <p> <img src="../img/telefono.png" alt=""> +598 2222 3333</p>
+                </div>
+                <form action="#" method="post">
+                    <div class="campo-nombre">
+                        <label for="id-nombre">Nombre <span>*</span></label>
+                        <input type="text" name="nombre" id="id-nombre" placeholder="Escribe tu nombre" required>
+                    </div>
+
+                    <div class="campo-correo">
+                        <label for="id-correo">Correo Electrónico <span>*</span></label>
+                        <input type="email" name="correo" id="id-correo" placeholder="Escribe un correo electrónico"
+                            required>
+                    </div>
+
+                    <div class="campo-telefono">
+                        <label for="id-telefono">Teléfono &#40;opcional&#41;</label>
+                        <input type="number" name="telefono" id="id-telefono" placeholder="Escribe un teléfono">
+                    </div>
+                    <div class="campo-categoria">
+                        <label for="id-categoria">¿Sobre qué te gustaría consultarnos? &#40;opcional&#41;</label>
+                        <select name="categoria" id="id-categoria">
+                            <option value="0" disabled selected>*Seleccione una categoría*</option>
+                            <option value="1">Productos</option>
+                            <option value="2">Servicios</option>
+                        </select>
+                    </div>
+                    <div class="campo-newsletter">
+                        <label for="id-newsletter">¿Deseas recibir nuestro Newsletter?</label>
+                        <input type="checkbox" name="newsletter" id="id-newsletter">
+                    </div>
+
+                    <div class="campo-mensaje">
+                        <label for="id-mensaje">Envíanos tu comentario <span>*</span></label><br>
+                        <textarea name="" id="id-mensaje" cols="30" rows="10" placeholder="Tu Mensaje"
+                            required></textarea>
+                    </div>
+                    <div class="campo-botones">
+                        <input class="boton-oscuro" type="submit" value="Enviar">
+                        <input class="boton-claro" type="reset" value="Cancelar">
+                    </div>
+                </form>
+            </div>
+        </section>
+    </main>
+    <!-- FIN DEL MAIN -->
+
+    <!-- FOOTER -->
+    <footer>
+        <img src="../img/logo-negro-chico.png" alt="">
+        <div>
+            <h3>Día A Día</h3>
+            <ul>
+                <li>
+                    <a href="">Nosotros</a>
+                </li>
+                <li>
+                    <a href="">Contacto</a>
+                </li>
+            </ul>
+        </div>
+        <div>
+            <h3>Compras</h3>
+            <ul>
+                <li>
+                    <a href="">Como comprar</a>
+                </li>
+                <li>
+                    <a href="">Preguntas Frecuentes</a>
+                </li>
+                <li>
+                    <a href="">Términos y condiciones</a>
+                </li>
+            </ul>
+        </div>
+        <div>
+            <h3>Mi cuenta</h3>
+            <ul>
+                <li>
+                    <a href="">Acceder</a>
+                </li>
+                <li>
+                    <a href="">Wishlist</a>
+                </li>
+            </ul>
+        </div>
+        <div>
+            <h3>Seguinos en nuestras redes</h3>
+            <div id="contenedor-redes">
+                <a href="">
+                    <img src="../img/facebook.png" alt="Logo de Facebook">
+                </a>
+                <a href="">
+                    <img src="../img/instagram.png" alt="Logo de Instagram">
+                </a>
+                <a href="">
+                    <img src="../img/gmail.png" alt="Logo de Gmail">
+                </a>
+            </div>
+        </div>
+    </footer>
+    <!-- FIN DEL FOOTER -->
+</body>
+
+</html>
