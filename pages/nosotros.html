@@ -5,40 +5,59 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Dia A Dia | Nosotros</title>
+
+    <!-- CSS Bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+
+    <!-- Estilos CSS -->
     <link rel="stylesheet" href="../estilos.css">
+    <!-- Favicon -->
     <link rel="shortcut icon" href="../img/favicon.ico" type="image/x-icon">
+
+    <title>Dia A Dia | Nosotros</title>
+
 </head>
 
 <body>
     <!-- HEADER -->
     <header>
-        <nav>
-            <ul>
-                <li>
-                    <a href="../index.html">Inicio</a>
-                </li>
-                <li>
-                    <a href="menu.html">Menú</a>
-                </li>
-                <li>
-                    <a href="servicios.html">Servicios</a>
-                </li>
-                <li>
-                    <a href="../index.html" id="logo">
-                        <img src="../img/logo.png" alt="Logo de mi página">
-                    </a>
-                </li>
-                <li>
-                    <a href="blog.html">Blog</a>
-                </li>
-                <li class="link-activo">
-                    <a href="#">Nosotros</a>
-                </li>
-                <li>
-                    <a href="contacto.html">Contacto</a>
-                </li>
-            </ul>
+        <!-- Navbar Bootstrap -->
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+            <a class="navbar-brand" id="logo" href="#">
+                <img src="../img/logo.png" alt="Logo de mi página">
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="container-fluid">
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <a href="../index.html">Inicio</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="menu.html">Menú</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="servicios.html">Servicios</a>
+                        </li>
+                        <li>
+                        </li>
+                        <li class="nav-item">
+                            <a href="blog.html">Blog</a>
+                        </li>
+                        <li class="nav-item link-activo">
+                            <a href="#">Nosotros</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="contacto.html">Contacto</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
         </nav>
     </header>
     <!-- FIN DEL HEADER -->
@@ -73,13 +92,108 @@
             </div>
             <div></div>
         </section>
+
+        <!-- Acordeón Bootstrap -->
+        <section id="segunda-seccion-nosotros">
+            <div class="centrado-grande">
+                <div class="accordion" id="accordionExample">
+                    <h3>Preguntas frecuentes: </h3>
+                    <!-- Item 1 -->
+                    <div class="accordion-item">
+                        <h2 class="accordion-header" id="headingOne">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#collapseOne" aria-expanded="false" aria-controls="collapseOne">
+                                ¿Cómo son las entregas?
+                            </button>
+                        </h2>
+                        <div id="collapseOne" class="accordion-collapse collapse" aria-labelledby="headingOne"
+                            data-bs-parent="#accordionExample">
+                            <div class="accordion-body">Las entregas son diarias entre las 7 y las 9 de la mañana, o el
+                                día
+                                antes en el
+                                horario de la tarde a partir de las 17 hs, horario a convenir. Si llevas viandas el fin
+                                de
+                                semana se entregan los viernes de tarde.</div>
+                        </div>
+                    </div>
+                    <!-- Item 2 -->
+                    <div class="accordion-item">
+                        <h2 class="accordion-header" id="headingTwo">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                                ¿Puedo pasar a buscar yo mismo la vianda?
+                            </button>
+                        </h2>
+                        <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="flush-headingTwo"
+                            data-bs-parent="#accordionExample">
+                            <div class="accordion-body">Claro que sí, podés hacerlo en nuestro horario de atención en el
+                                local de 9 a 18hs.</div>
+                        </div>
+                    </div>
+                    <!-- Item 3 -->
+                    <div class="accordion-item">
+                        <h2 class="accordion-header" id="headingThree">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                                ¿Qué pasa si hay alimentos que no puedo consumir?
+                            </button>
+                        </h2>
+                        <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree"
+                            data-bs-parent="#accordionExample">
+                            <div class="accordion-body">Nos lo notificás y en el caso de que el menú contenga algún
+                                alimento
+                                que no puedas consumir lo sustituimos por otra opción que tengamos disponible ese día y
+                                se
+                                adapte a tus necesidades.</div>
+                        </div>
+                    </div>
+                    <!-- Item 4 -->
+                    <div class="accordion-item">
+                        <h2 class="accordion-header" id="headingFour">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+                                Soy vegentariano o vegano ¿Hay opciones de menú para mi?
+                            </button>
+                        </h2>
+                        <div id="collapseFour" class="accordion-collapse collapse" aria-labelledby="headingFour"
+                            data-bs-parent="#accordionExample">
+                            <div class="accordion-body">Contamos con menú vegetariano, aunque no vegano. De todas formas
+                                te
+                                recomendamos notificarnos al comenzar así podemos
+                                tenerlo en cuenta en caso de que alguna comida contenga proteína animal.</div>
+                        </div>
+                    </div>
+                    <!-- Item 5 -->
+                    <div class="accordion-item">
+                        <h2 class="accordion-header" id="headingFive">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#collapseFive" aria-expanded="false" aria-controls="collapseFive">
+                                ¿Cómo puedo pagar?
+                            </button>
+                        </h2>
+                        <div id="collapseFive" class="accordion-collapse collapse" aria-labelledby="headingFive"
+                            data-bs-parent="#accordionExample">
+                            <div class="accordion-body">Podés abonar en efectivo o con cualquier tarjeta de crédito o
+                                débito. Con
+                                transferencia y también aceptamos tarjetas de tickets y sodexo.</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="centrado-movil">
+                    <h3>Nuestra ubicación:</h3>
+                    <iframe
+                        src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d13086.500884283212!2d-56.19238075!3d-34.9158536!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1ses!2suy!4v1637179928559!5m2!1ses!2suy"
+                        width="300" height="300" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+                </div>
+            </div>
+        </section>
     </main>
     <!-- FIN DEL MAIN -->
     <!-- FOOTER -->
     <footer>
         <img src="../img/logo-negro-chico.png" alt="">
         <div>
-            <h3>Día A Día</h3>
+            <h5>Día A Día</h5>
             <ul>
                 <li>
                     <a href="">Nosotros</a>
@@ -90,7 +204,7 @@
             </ul>
         </div>
         <div>
-            <h3>Compras</h3>
+            <h5>Compras</h5>
             <ul>
                 <li>
                     <a href="">Como comprar</a>
@@ -104,7 +218,7 @@
             </ul>
         </div>
         <div>
-            <h3>Mi cuenta</h3>
+            <h5>Mi cuenta</h5>
             <ul>
                 <li>
                     <a href="">Acceder</a>
@@ -115,7 +229,7 @@
             </ul>
         </div>
         <div>
-            <h3>Seguinos en nuestras redes</h3>
+            <h5>Seguinos en nuestras redes</h5>
             <div id="contenedor-redes">
                 <a href="">
                     <img src="../img/facebook.png" alt="Logo de Facebook">
@@ -130,6 +244,14 @@
         </div>
     </footer>
     <!-- FIN DEL FOOTER -->
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js"
+        integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB" crossorigin="anonymous">
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js"
+        integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13" crossorigin="anonymous">
+    </script>
 
 
 </body>
