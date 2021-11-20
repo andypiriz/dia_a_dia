@@ -262,7 +262,7 @@ form {
 
 /* ---------- ESTILOS PARA MÓVIL ---------- */
 
-@media (max-width: 400px) {
+@media screen and (max-width: 768px) {
     body {
         font-size: 13px;
     }
@@ -587,7 +587,7 @@ form {
 
 /* ---------- ESTILOS PARA ESCRITORIO ---------- */
 
-@media (min-width: 768px) {
+@media screen and (min-width: 768px) {
 
     /* ----- Contenedores auxiliares ----- */
     .centrado-grande {
