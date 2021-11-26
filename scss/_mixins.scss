@@ -1,0 +1,8 @@
+// Mixins
+
+$margen: 0 auto;
+
+@mixin centrado($margen, $ancho) {
+  margin: $margen;
+  width: $ancho;
+}

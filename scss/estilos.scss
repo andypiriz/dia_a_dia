@@ -1,0 +1,1088 @@
+/* Fuente Quicksand & Monteserrat */
+
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@600&family=Quicksand&display=swap");
+
+@import "variables";
+@import "operaciones";
+@import "mixins";
+/* ---------- ESTILOS GENERALES ---------- */
+
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Quicksand", sans-serif;
+  font-size: $font-size;
+}
+
+/* ----- Fuentes ----- */
+
+h1,
+h2,
+h3,
+h4,
+h5 {
+  font-family: "Montserrat", sans-serif;
+  color: #000000;
+}
+
+h1 {
+  font-size: $font-size * 2;
+}
+
+/* ----- Clases reutilizables ----- */
+
+.flexbox-columna {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.boton-oscuro {
+  color: black;
+  text-decoration: none;
+  font-weight: bold;
+  display: block;
+  background-color: $color-primary;
+  border-radius: 10px;
+  padding: 0.625rem 1.563rem;
+  border: 2px solid transparent;
+  transition: background-color 1s;
+}
+
+.boton-oscuro:hover,
+.boton-claro:hover {
+  border-color: #000000;
+  background-color: transparent;
+}
+
+.boton-claro {
+  color: black;
+  text-decoration: none;
+  font-weight: bold;
+  display: block;
+  background-color: $color-secondary;
+  border-radius: 10px;
+  padding: 0.625rem 1.563rem;
+  border: 2px solid transparent;
+  transition: background-color 1s;
+}
+
+/* ----- Header ----- */
+
+header {
+  a {
+    text-decoration: none;
+  }
+}
+/* ----- Footer ----- */
+
+footer {
+  background: url(../img/patron-2.jpg);
+  border-top: solid 2px #000000;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  padding: 2rem;
+
+  li {
+    list-style-type: none;
+  }
+
+  a {
+    text-decoration: none;
+    color: #000000;
+  }
+
+  #contenedor-redes {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    padding: 20px;
+  }
+}
+
+/* ----- Whatsapp ----- */
+
+#logo-whatsapp {
+  img {
+    max-width: 70px;
+    position: fixed;
+    right: 20px;
+    bottom: 20px;
+    z-index: 1000;
+  }
+}
+/* ---------- PÁGINA INDEX ---------- */
+
+/* ----- Primer Sección - Index ----- */
+
+.articulos-primer-seccion {
+  a {
+    text-align: center;
+    text-decoration: none;
+    color: #000000;
+  }
+
+  h2 {
+    color: #f8f1df;
+    background-color: #000000;
+    font-size: 1.25rem;
+    padding: 5px;
+    transition: all 0.5s;
+  }
+
+  #primer-articulo {
+    background: url(../img/vianda-individual.jpg) no-repeat center center;
+  }
+
+  #segundo-articulo {
+    background: url(../img/vianda-empresas.jpg) no-repeat center center;
+  }
+
+  #tercer-articulo {
+    background: url(../img/catering.jpg) no-repeat center center;
+  }
+
+  .soluciones-fondo {
+    h2 {
+      display: inline-block;
+      color: #000000;
+      padding: 5px;
+      margin-top: 20px;
+    }
+  }
+}
+
+/* ----- Segunda Sección -Index ----- */
+
+#segunda-seccion {
+  figcaption {
+    text-align: center;
+    font-weight: bold;
+    font-size: 0.8rem;
+  }
+}
+
+#tercer-seccion {
+  form {
+    padding: 1.25rem;
+  }
+}
+
+/* ---------- PÁGINA BLOG ---------- */
+
+/* ----- Primer Sección - Blog ----- */
+
+#primer-seccion-blog {
+  > h2 {
+    text-align: center;
+    padding-bottom: 1.25rem;
+  }
+
+  article {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 1.25rem;
+  }
+  a {
+    text-decoration: none;
+    text-transform: uppercase;
+    color: $color-primary;
+    font-weight: bold;
+    font-size: 12px;
+    align-self: flex-end;
+  }
+
+  figcaption {
+    color: var(--var-grey);
+    font-size: 12px;
+  }
+}
+
+/* ---------- PÁGINA CONTACTO ---------- */
+
+/* ----- Segunda Sección - Contacto ----- */
+
+#segunda-seccion-contacto {
+  > div {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+  }
+
+  #div-contacto {
+    width: 300px;
+    min-height: 400px;
+    background-color: $color-primary;
+    color: $color-white;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: flex-start;
+    padding-left: 30px;
+  }
+
+  form {
+    width: 500px;
+    border: solid 2px rgb(173, 172, 172);
+    border-radius: 5px;
+    padding: 1.875rem;
+
+    label {
+      color: $color-primary;
+      text-transform: uppercase;
+      font-size: 12px;
+      font-weight: bold;
+    }
+
+    span {
+      color: $color-red;
+      font-size: 16px;
+    }
+
+    #id-nombre,
+    #id-correo,
+    #id-telefono,
+    select,
+    textarea {
+      width: 100%;
+      background-color: #ffffff;
+      border: solid 2px #c3c3c3;
+      border-radius: 3px;
+      padding-left: 1.25rem;
+      height: 2.5rem;
+      color: #868686;
+    }
+
+    .campo-newsletter {
+      display: flex;
+      justify-content: space-evenly;
+      align-items: center;
+    }
+
+    .campo-botones input {
+      width: 100%;
+      margin: 10px;
+    }
+
+    textarea {
+      height: 10vh;
+      padding-top: 1.25rem;
+    }
+
+    select {
+      height: 50px;
+    }
+  }
+}
+
+/* ************************************************************************** */
+
+/* ********** MEDIA QUERIES ********** */
+
+/* ---------- ESTILOS PARA MÓVIL ---------- */
+
+@media screen and (max-width: 768px) {
+  body {
+    font-size: $font-size - 2;
+  }
+
+  /* ----- Contenedores auxiliares ----- */
+  .centrado-movil {
+    @include centrado($margen, 80%);
+  }
+
+  /* Nav */
+  nav {
+    text-align: center;
+    width: 100%;
+    min-height: 80px;
+    background: url(../img/patron-2.jpg);
+    border-bottom: solid 3px #000000;
+
+    img {
+      width: 100%;
+      max-width: 65px;
+    }
+
+    #logo {
+      margin-left: 10px;
+    }
+
+    ul li a {
+      text-decoration: none;
+      color: #000000;
+      font-weight: bold;
+      display: block;
+      text-align: center;
+      padding: 0.625rem 0;
+    }
+
+    .navbar-toggler {
+      background-color: #00ab7c;
+      position: absolute;
+      right: 10px;
+      top: 20px;
+    }
+  }
+
+  /* PÁGINA INDEX */
+  /* -----Portada - Index----- */
+  #portada {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 1.25rem;
+
+    > div {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-around;
+      align-items: center;
+      text-align: center;
+      font-weight: bold;
+    }
+
+    input {
+      display: inline;
+    }
+  }
+
+  /* ----- Primer Seccion - Index ----- */
+  #primer-seccion {
+    padding-top: 1.25rem;
+
+    .articulos-primer-seccion article {
+      width: 100%;
+      min-height: 400px;
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-end;
+      border-radius: 3px;
+      box-shadow: $sombra;
+    }
+
+    .soluciones-fondo {
+      background: url(../img/fondo-verduras.png) no-repeat center center;
+      background-size: cover;
+      min-height: 20vh;
+      width: 100%;
+      text-align: center;
+    }
+  }
+
+  /* ----- Segunda Sección - Index */
+  #segunda-seccion {
+    div {
+      background-color: $color-yellow;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      flex-wrap: wrap;
+      padding: 2.5rem;
+      gap: 2.5rem;
+    }
+
+    figure {
+      margin: 0 0.938rem;
+      max-width: 70px;
+    }
+
+    img {
+      width: 100%;
+    }
+  }
+
+  /* ----- Tercer Sección -Index ----- */
+  #tercer-seccion {
+    min-height: 70vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    background: url(../img/patron-4.jpg) no-repeat;
+    background-size: cover;
+    padding: 1.25rem;
+
+    article {
+      flex: 1;
+      min-height: 300px;
+      padding: 1.25rem;
+    }
+
+    form {
+      flex: 1;
+      width: 100%;
+      min-height: 300px;
+      background: url(../img/patron.jpg);
+      border: transparent;
+    }
+
+    .input-texto {
+      width: 100%;
+      height: 30px;
+    }
+  }
+
+  /* PÁGINA MENÚ */
+  /* ----- Primer Sección - Menú ----- */
+  #primer-seccion-menu {
+    min-height: 70vh;
+    background: url(../img/plato-vegetariano.jpg) center center;
+
+    div {
+      display: none;
+    }
+  }
+
+  /* ----- Segunda Sección - Menú ----- */
+  #segunda-seccion-menu {
+    div {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      align-items: flex-start;
+    }
+  }
+
+  /* ---------- PÁGINA SERVICIOS --------- */
+  #portada-servicios {
+    text-align: center;
+  }
+
+  #primer-seccion-servicios {
+    div {
+      margin: 0 auto;
+      width: 90%;
+      padding: 2.5rem;
+      display: flex;
+      flex-direction: column;
+      gap: 1.25rem;
+    }
+
+    img {
+      width: 100%;
+    }
+  }
+
+  /* ---------- PÁGINA BLOG ---------- */
+  #seccion-portada-blog {
+    min-height: 100vh;
+    padding: 2.5rem 0;
+    background: url(../img/food-blog.png) no-repeat top right;
+    background-size: contain;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+
+    > div {
+      height: 40vh;
+      margin-left: 2.5rem;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+    }
+
+    #redes-portada {
+      width: 50%;
+      display: flex;
+      justify-content: space-around;
+
+      img {
+        max-width: 2.5rem;
+      }
+    }
+  }
+
+  /* ----- Primer Sección - Blog ----- */
+  #primer-seccion-blog {
+    > div {
+      margin: 0 auto;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    img {
+      width: 100%;
+    }
+  }
+
+  /* ---------- PÁGINA NOSOTROS ---------- */
+  /* ----- Sección Portada - Nosotros ------ */
+  #portada-nosotros {
+    background: url(../img/icono-en-tabla.jpg) bottom;
+    background-size: cover;
+    min-height: 60vh;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    padding-top: 2.5rem;
+  }
+
+  /* ---------- PÁGINA NOSOTROS ---------- */
+  #primer-seccion-nosotros {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 1.25rem;
+    min-height: 100vh;
+    gap: 30px;
+
+    h1 {
+      width: 100%;
+    }
+
+    > div {
+      min-height: 70vh;
+      flex: 1;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-around;
+    }
+
+    div:nth-child(2) {
+      width: 100%;
+      min-height: 50vh;
+      flex: 1;
+      background: url(../img/viandas-verdes.jpg) no-repeat center center;
+      background-size: cover;
+    }
+  }
+
+  /* ----- Segunda Sección - Nosotros ----- */
+  #segunda-seccion-nosotros {
+    > div {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      text-align: center;
+      gap: 1.25rem;
+    }
+
+    iframe {
+      width: 100%;
+    }
+  }
+
+  /* ---------- PÁGINA CONTACTO ---------- */
+  /* ----- Primer Sección - Contacto ----- */
+  #primer-seccion-contacto {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    padding: 2.5rem;
+  }
+
+  #segunda-seccion-contacto {
+    > div {
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+    }
+
+    form {
+      width: 100%;
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      gap: 2.5rem;
+      border: none;
+    }
+  }
+
+  /* ---------- FOOOTER ---------- */
+  footer {
+    flex-direction: column;
+
+    > img {
+      display: none;
+    }
+
+    h3 {
+      font-size: 1.25rem;
+    }
+  }
+}
+
+/* ************************************************************************** */
+
+/* ---------- ESTILOS PARA ESCRITORIO ---------- */
+
+@media screen and (min-width: 768px) {
+  /* ----- Contenedores auxiliares ----- */
+  .centrado-grande {
+    @include centrado($margen, 95%);
+  }
+
+  .centrado-mediano {
+    @include centrado($margen, 80%);
+    max-width: 1200px;
+  }
+
+  nav {
+    position: sticky;
+    top: -1px;
+    width: 100vw;
+    text-align: center;
+    width: 100%;
+    min-height: 80px;
+    background: url(../img/patron-2.jpg);
+    border-bottom: solid 3px #000000;
+
+    img {
+      width: 100%;
+      max-width: 140px;
+    }
+
+    #logo {
+      position: absolute;
+      left: 45%;
+      top: 20px;
+      border: transparent;
+    }
+
+    #logo:hover {
+      background: transparent;
+      border: transparent;
+    }
+
+    ul {
+      list-style-type: none;
+      display: flex;
+      justify-content: center;
+      gap: 1.25rem;
+      padding-top: 1.25rem;
+      width: 840px;
+      margin: 0 auto;
+
+      li {
+        flex: 1;
+
+        a {
+          text-decoration: none;
+          color: #000000;
+          font-weight: bold;
+          display: block;
+          text-align: center;
+          padding: 0.625rem 0;
+          border: solid 2px transparent;
+        }
+
+        a:hover {
+          text-decoration: none;
+          color: #000000;
+          background-color: #f8f1df;
+          font-weight: bold;
+          display: block;
+          text-align: center;
+          padding: 0.625rem 0;
+          border: solid 2px #000000;
+          border-radius: 10px;
+        }
+      }
+    }
+
+    .link-activo {
+      border-bottom: solid 3px #000000;
+      padding-bottom: 0.125rem;
+    }
+  }
+
+  /* PÁGINA INDEX */
+  /* -----Portada - Index----- */
+  #portada {
+    background: url(../img/portada2.jpg) no-repeat center center fixed;
+    height: 100vh;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    > div {
+      width: 40vw;
+      min-height: 40vh;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-around;
+      align-items: center;
+      text-align: center;
+      font-weight: bold;
+    }
+
+    input {
+      display: inline;
+    }
+  }
+
+  /* ----- Primer Sección - Index ----- */
+  #primer-seccion {
+    padding: 100px;
+    position: relative;
+    min-height: 100vh;
+
+    .articulos-primer-seccion {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      gap: 1.25rem;
+      position: absolute;
+      top: 30vh;
+      left: 15vw;
+
+      article {
+        width: 340px;
+        min-height: 500px;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-end;
+        border-radius: 3px;
+        box-shadow: $sombra;
+      }
+
+      h2:hover {
+        background-color: #00ab7c;
+        transform: scale(1.1, 1.1);
+      }
+    }
+
+    .soluciones-fondo {
+      background: url(../img/fondo-verduras.png) no-repeat center center;
+      background-size: cover;
+      min-height: 40vh;
+      width: 70vw;
+      text-align: center;
+    }
+  }
+
+  /* ----- Segunda Sección - Index */
+  #segunda-seccion {
+    background: url(../img/tomato-salad.jpg) no-repeat;
+    background-size: cover;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    div {
+      background-color: $color-yellow;
+      display: inline-block;
+      padding: 2.5rem;
+      border-radius: 0.625rem;
+    }
+
+    figure {
+      display: inline-block;
+      margin: 0 0.938rem;
+      transition: all 1s;
+    }
+
+    figure:hover {
+      transform: scale(1.2, 1.2);
+    }
+
+    img {
+      width: 100%;
+      max-width: 150px;
+    }
+  }
+
+  /* ----- Tercer Sección -Index ----- */
+  #tercer-seccion {
+    min-height: 70vh;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    background: url(../img/patron-4.jpg);
+    background-size: cover;
+    padding: 1.25rem;
+
+    article {
+      flex: 1;
+      min-height: 300px;
+      padding: 1.25rem;
+    }
+
+    form {
+      flex: 1;
+      min-height: 300px;
+      background: url(../img/patron.jpg);
+      border: transparent;
+
+      .input-texto {
+        width: 100%;
+        height: 30px;
+      }
+    }
+  }
+
+  /* PÁGINA MENÚ */
+  /* ----- Primer Sección - Menú ----- */
+  #primer-seccion-menu {
+    min-height: 80vh;
+
+    div {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      grid-template-rows: repeat(2, 1fr);
+      grid-gap: 1.25rem;
+      padding: 2.5rem 0;
+
+      figure img {
+        width: 100%;
+        min-height: 100%;
+      }
+
+      .grid-item1 {
+        grid-row: 1 / 3;
+        grid-column: 1 / 2;
+      }
+
+      .grid-item2 {
+        grid-row: 1 / 2;
+        grid-column: 2 / 3;
+      }
+
+      .grid-item3 {
+        grid-row: 1 / 2;
+        grid-column: 3 / 4;
+      }
+
+      .grid-item4 {
+        grid-row: 2 / 3;
+        grid-column: 2 / 3;
+      }
+
+      .grid-item5 {
+        grid-row: 2 / 3;
+        grid-column: 3 / 4;
+      }
+    }
+  }
+
+  /* ------ Segunda Sección - Menú ----- */
+  #segunda-seccion-menu {
+    > div {
+      display: grid;
+      grid-template-rows: repeat(3, 1fr);
+      grid-template-columns: repeat(2, 1fr);
+
+      div:nth-child(1) {
+        background-color: #00ab7c;
+        grid-row: 1 / 2;
+        grid-column: 1 /2;
+      }
+
+      div:nth-child(2) {
+        background-color: red;
+        grid-row: 1 / 2;
+        grid-column: 2 /3;
+      }
+
+      div:nth-child(3) {
+        background-color: blueviolet;
+        grid-row: 2 / 3;
+        grid-column: 1 / 2;
+      }
+
+      div:nth-child(4) {
+        background-color: pink;
+        grid-row: 2 / 3;
+        grid-column: 2 / 3;
+      }
+
+      div:nth-child(5) {
+        background-color: orangered;
+        grid-row: 3 / 4;
+        grid-column: 1 / 3;
+      }
+    }
+  }
+
+  /* ---------- PÁGINA SERVICIOS --------- */
+  #portada-servicios {
+    background: url(../img/italian-food.jpg) fixed;
+    background-size: cover;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    h1 {
+      margin: 2.5rem 0 0 2.5rem;
+    }
+  }
+
+  #primer-seccion-servicios {
+    div {
+      padding: 2.5rem;
+      display: grid;
+      grid-gap: 2.5rem;
+      grid-template-rows: repeat(2, 1fr);
+      grid-template-columns: repeat(2, 1fr);
+      grid-template-areas: "articulo-1 articulo-2" "articulo-3 articulo-4";
+
+      .articulo-servicios1 {
+        grid-area: articulo-1;
+      }
+
+      .articulo-servicios2 {
+        grid-area: articulo-2;
+      }
+
+      .articulo-servicios3 {
+        grid-area: articulo-3;
+      }
+
+      .articulo-servicios3 {
+        grid-area: articulo-4;
+      }
+    }
+  }
+
+  /* ---------- PÁGINA BLOG ---------- */
+  #seccion-portada-blog {
+    min-height: 100vh;
+    padding: 2.5rem 0;
+    background: url(../img/food-blog.png) no-repeat center right;
+    background-size: contain;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+
+    > div {
+      width: 35vw;
+      height: 50vh;
+      margin-left: 2.5rem;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-evenly;
+      align-items: center;
+    }
+
+    #redes-portada {
+      width: 50%;
+      display: flex;
+      justify-content: space-around;
+    }
+  }
+
+  /* ----- Primer Sección - Blog ----- */
+  #primer-seccion-blog {
+    > div {
+      margin: 0 auto;
+      display: grid;
+      grid-gap: 2.5rem;
+      grid-template-rows: repeat(2, 1fr) auto;
+      grid-template-columns: repeat(3, 1fr);
+    }
+  }
+
+  /* ---------- PÁGINA NOSOTROS ---------- */
+  /* ----- Sección Portada - Nosotros ----- */
+  #portada-nosotros {
+    background: url(../img/icono-en-tabla.jpg) bottom fixed;
+    background-size: cover;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  /* ---------- PÁGINA NOSOTROS ---------- */
+  #primer-seccion-nosotros {
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    align-items: center;
+    padding: 1.25rem;
+    min-height: 100vh;
+    gap: 30px;
+
+    h1 {
+      width: 100%;
+    }
+
+    > div {
+      min-height: 70vh;
+      flex: 1;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-around;
+    }
+
+    div:nth-child(2) {
+      min-height: 70vh;
+      flex: 1;
+      background: url(../img/viandas-verdes.jpg);
+      background-size: cover;
+    }
+  }
+
+  /* ----- Segunda Sección - Nosotros ----- */
+  #segunda-seccion-nosotros {
+    > div {
+      display: flex;
+      justify-content: space-between;
+      align-items: flex-start;
+      gap: 1.25rem;
+
+      div:nth-child(1) {
+        flex: 3;
+      }
+
+      div:nth-child(2) {
+        flex: 1;
+      }
+    }
+  }
+
+  /* ---------- PÁGINA CONTACTO ---------- */
+  /* ----- Primer Sección - Contacto ----- */
+  #primer-seccion-contacto {
+    min-height: 70vh;
+    background: url(img/portada.jpg) no-repeat center center fixed;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  #segunda-seccion-contacto {
+    min-height: 100vh;
+
+    form {
+      width: 50%;
+      height: 70vh;
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      grid-gap: 0.313rem;
+      border: none;
+
+      .campo-nombre,
+      .campo-correo,
+      .campo-telefono,
+      .campo-mensaje,
+      .campo-botones {
+        grid-column: span 2;
+      }
+    }
+  }
+
+  /* ---------- FOOTER ---------- */
+  footer {
+    img {
+      max-width: 100px;
+      transition: all 1s;
+    }
+
+    img:hover {
+      transform: scale(1.1, 1.1);
+    }
+  }
+}
