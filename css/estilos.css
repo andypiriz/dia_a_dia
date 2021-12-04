@@ -116,10 +116,12 @@ footer {
   margin-top: 20px; }
 
 /* ----- Segunda Sección -Index ----- */
-#segunda-seccion figcaption {
-  text-align: center;
-  font-weight: bold;
-  font-size: 0.8rem; }
+#segunda-seccion {
+  margin-top: 20vh; }
+  #segunda-seccion figcaption {
+    text-align: center;
+    font-weight: bold;
+    font-size: 0.8rem; }
 
 #tercer-seccion form {
   padding: 1.25rem; }
@@ -185,7 +187,7 @@ footer {
   #segunda-seccion-contacto form select,
   #segunda-seccion-contacto form textarea {
     width: 100%;
-    background-color: #ffffff;
+    background-color: #f8f1df;
     border: solid 2px #c3c3c3;
     border-radius: 3px;
     padding-left: 1.25rem;
@@ -233,6 +235,8 @@ footer {
       display: block;
       text-align: center;
       padding: 0.625rem 0; }
+      nav ul li a:active {
+        color: #00ab7c; }
     nav .navbar-toggler {
       background-color: #00ab7c;
       position: absolute;
@@ -316,11 +320,26 @@ footer {
     #primer-seccion-menu div {
       display: none; }
   /* ----- Segunda Sección - Menú ----- */
-  #segunda-seccion-menu div {
+  #segunda-seccion-menu h2 {
+    padding-left: 2.5rem; }
+  #segunda-seccion-menu > div {
+    padding: 1.25rem;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    align-items: flex-start; }
+    align-items: center;
+    gap: 1.25rem; }
+    #segunda-seccion-menu > div article {
+      border-bottom: solid 2px #00ab7c;
+      padding-bottom: 1.25rem;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      align-items: flex-start; }
+      #segunda-seccion-menu > div article img {
+        width: 100%; }
+      #segunda-seccion-menu > div article input {
+        align-self: flex-end; }
   /* ---------- PÁGINA SERVICIOS --------- */
   #portada-servicios {
     text-align: center; }
@@ -495,6 +514,10 @@ footer {
     nav .link-activo {
       border-bottom: solid 3px #000000;
       padding-bottom: 0.125rem; }
+  footer ul li a {
+    font-weight: bold; }
+    footer ul li a:hover {
+      color: #00ab7c; }
   /* PÁGINA INDEX */
   /* -----Portada - Index----- */
   #portada {
@@ -591,7 +614,8 @@ footer {
   /* PÁGINA MENÚ */
   /* ----- Primer Sección - Menú ----- */
   #primer-seccion-menu {
-    min-height: 80vh; }
+    min-height: 80vh;
+    padding: 5rem 0; }
     #primer-seccion-menu div {
       display: grid;
       grid-template-columns: repeat(3, 1fr);
@@ -617,30 +641,38 @@ footer {
         grid-row: 2 / 3;
         grid-column: 3 / 4; }
   /* ------ Segunda Sección - Menú ----- */
-  #segunda-seccion-menu > div {
-    display: grid;
-    grid-template-rows: repeat(3, 1fr);
-    grid-template-columns: repeat(2, 1fr); }
-    #segunda-seccion-menu > div div:nth-child(1) {
-      background-color: #00ab7c;
-      grid-row: 1 / 2;
-      grid-column: 1 /2; }
-    #segunda-seccion-menu > div div:nth-child(2) {
-      background-color: red;
-      grid-row: 1 / 2;
-      grid-column: 2 /3; }
-    #segunda-seccion-menu > div div:nth-child(3) {
-      background-color: blueviolet;
-      grid-row: 2 / 3;
-      grid-column: 1 / 2; }
-    #segunda-seccion-menu > div div:nth-child(4) {
-      background-color: pink;
-      grid-row: 2 / 3;
-      grid-column: 2 / 3; }
-    #segunda-seccion-menu > div div:nth-child(5) {
-      background-color: orangered;
-      grid-row: 3 / 4;
-      grid-column: 1 / 3; }
+  #segunda-seccion-menu {
+    padding: 5rem 0; }
+    #segunda-seccion-menu h2 {
+      text-align: center; }
+    #segunda-seccion-menu div {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      gap: 2.5rem; }
+      #segunda-seccion-menu div article {
+        flex: 1;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: flex-start;
+        border-radius: 0.625rem;
+        box-shadow: 2.8px 2.8px 2.2px rgba(0, 0, 0, 0.02), 6.7px 6.7px 5.3px rgba(0, 0, 0, 0.028), 12.5px 12.5px 10px rgba(0, 0, 0, 0.035), 22.3px 22.3px 17.9px rgba(0, 0, 0, 0.042), 41.8px 41.8px 33.4px rgba(0, 0, 0, 0.05), 100px 100px 80px rgba(0, 0, 0, 0.07);
+        padding: 1.25rem 0; }
+        #segunda-seccion-menu div article input {
+          align-self: flex-end;
+          margin-right: 1.25rem; }
+      #segunda-seccion-menu div article:nth-child(5) > div {
+        display: flex;
+        flex-direction: row; }
+        #segunda-seccion-menu div article:nth-child(5) > div figure {
+          flex: 1; }
+        #segunda-seccion-menu div article:nth-child(5) > div div:nth-child(2) {
+          flex: 1;
+          display: flex;
+          flex-wrap: wrap; }
+          #segunda-seccion-menu div article:nth-child(5) > div div:nth-child(2) h4 {
+            width: 100%; }
   /* ---------- PÁGINA SERVICIOS --------- */
   #portada-servicios {
     background: url(../img/italian-food.jpg) fixed;
