@@ -439,7 +439,7 @@ footer {
 /* ---------- PÁGINA BLOG ---------- */
 /* ----- Portada - Blog ------ */
 #portada-blog {
-  min-height: 60vh;
+  min-height: 50vh;
   padding: 1.25rem 0;
   background: url(../img/food-blog.png) no-repeat top right;
   background-size: contain;
@@ -454,21 +454,7 @@ footer {
   }
 
   > div {
-    height: 40vh;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-
-    #redes-portada {
-      width: 50%;
-      display: flex;
-      justify-content: space-around;
-
-      img {
-        max-width: 2.5rem;
-      }
-    }
+    display: none;
   }
 }
 
@@ -840,25 +826,9 @@ footer {
 
   /* ---------- PÁGINA BLOG ---------- */
   #portada-blog {
-    min-height: 90vh;
+    height: 100vh;
     background: url(../img/food-blog.png) no-repeat center top;
     background-size: contain;
-    display: flex;
-    justify-content: center;
-    align-items: flex-end;
-
-    > div {
-      width: 50vw;
-      height: 25vh;
-      display: flex;
-      flex-direction: column;
-    }
-
-    #redes-portada {
-      width: 50%;
-      display: flex;
-      justify-content: space-around;
-    }
   }
 
   /* ----- Primer Sección - Blog ----- */
@@ -1170,7 +1140,11 @@ footer {
     padding-left: 4rem;
 
     > div {
-      width: 40vw;
+      display: flex;
+      flex-direction: column;
+      width: 50vw;
+      align-items: center;
+      text-align: center;
     }
   }
 
